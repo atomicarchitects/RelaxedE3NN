@@ -1,7 +1,7 @@
 import plotly.graph_objects as go
 from e3nn.io import SphericalTensor
 import torch
-from e3nn_relaxed_model_tensor import RelaxedConvolution
+from models.relaxed_e3nn_conv_model import RelaxedConvolution
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 from torch_geometric.data import Data
 from e3nn import o3
